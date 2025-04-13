@@ -83,7 +83,7 @@ FLUSH PRIVILEGES;
 sudo apt update
 sudo apt install mysql-client
 ```
--Then connect using Windows IP (usually `localhost` or `127.0.0.1`)
+- Then connect using Windows IP (usually `localhost` or `127.0.0.1`)
 ```bash
 mysql -u wsluser -p -h 172.24.144.1
 ```
