@@ -146,7 +146,6 @@ music-mood-analyzer/
 ├── playlist_manager.py      # Dynamic playlist management
 ├── stream_music.py          # Music stream simulator
 ├── user_feedback.py         # Feedback simulator/collector
-├── requirements.txt         # Python dependencies
 └── README.md                # This file
 ```
 
