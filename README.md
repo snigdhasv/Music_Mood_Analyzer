@@ -69,6 +69,25 @@ MYSQL_CONFIG = {
 }
 ```
 
+If you're using WSL
+- Open your `my.ini` or `my.cnf` file in your Windows MySQL installation (usually found in `C:\ProgramData\MySQL\MySQL Server X.X`).
+- Find this line `bind-address = 127.0.0.1` and replace it with `bind-address = 0.0.0.0`
+- Create a New User
+```sql
+CREATE USER 'wsluser'@'%' IDENTIFIED BY 'wslpass';
+GRANT ALL PRIVILEGES ON *.* TO 'wsluser'@'%';
+FLUSH PRIVILEGES;
+```
+- Install MySQL client in Debian (if not already):
+```bash
+sudo apt update
+sudo apt install mysql-client
+```
+- Then connect using Windows IP (usually `localhost` or `127.0.0.1`)
+```bash
+mysql -u wsluser -p -h 172.24.144.1
+```
+
 ### 4. Configure Kafka
 
 Create kafka topics
@@ -146,7 +165,6 @@ music-mood-analyzer/
 ├── playlist_manager.py      # Dynamic playlist management
 ├── stream_music.py          # Music stream simulator
 ├── user_feedback.py         # Feedback simulator/collector
-├── requirements.txt         # Python dependencies
 └── README.md                # This file
 ```
 
