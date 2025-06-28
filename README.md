@@ -2,6 +2,25 @@
 
 This project implements a complete real-time music mood analysis and recommendation system. It analyzes audio features of songs, classifies their mood, processes user feedback, and provides playlist recommendations based on user preferences.
 
+## Screenshots
+<p align="center">
+  <img src="assets/dash1.png" alt="dash1" width="800">
+  <br>
+  <em>Dashboard</em>
+</p>
+
+<p align="center">
+  <img src="assets/dash2.png" alt="dash2" width="800">
+  <br>
+  <em>Dashboard</em>
+</p>
+
+<p align="center">
+  <img src="assets/batch.png" alt="batch processing" width="800">
+  <br>
+  <em>Batch Processing</em>
+</p>
+
 ## System Components
 
 ### 1. **Streaming Pipeline**
